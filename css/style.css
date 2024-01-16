@@ -1,0 +1,790 @@
+/********** Template CSS **********/
+
+ :root {
+    --primary: #2878EB;
+    --secondary: #F14D5D;
+    --light: #ECF4FF;
+    --dark: #120F2D;
+}
+
+[class^=flaticon-]:before,
+[class*=" flaticon-"]:before,
+[class^=flaticon-]:after,
+[class*=" flaticon-"]:after {
+    font-size: inherit;
+    margin-left: 0;
+}
+
+h1,
+h2,
+.font-weight-bold {
+    font-weight: 700 !important;
+    color: coral;
+    font-family: 'Carattere', cursive;
+    /*font-family: 'Oswald', sans-serif;*/
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.btn {
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+
+p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+p span {
+    color: burlywood;
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
+
+.car-sel {
+    margin-top: 5%;
+    margin-right: 18%;
+    padding: 40px;
+}
+
+.car-sel h3 {
+    color: #ECF4FF;
+}
+
+.car-sel p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.contain-bg {
+    background-color: rgba(27, 47, 68, 0.2);
+}
+
+.erp-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-bg {
+    background: linear-gradient(rgba(18, 15, 45, .5), rgba(18, 15, 45, .5)), url(../imgnew/products/sudents1.jpg) top right;
+    background-size: cover;
+    height: 100vh;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-primary:hover,
+.btn-secondary:hover {
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    margin-left: 30px;
+    padding: 18px 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--dark);
+    outline: none;
+    transition: .5s;
+}
+
+
+/*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-family: fantasy;*/
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 30px 6px;
+    background-color: transparent;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--secondary);
+}
+
+@media (min-width: 992px) {
+    .navbar-light .navbar-nav .nav-link::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 5px;
+        bottom: 0;
+        left: 50%;
+        background: var(--secondary);
+        transition: .5s;
+    }
+    .navbar-light .navbar-nav .nav-link:hover::before,
+    .navbar-light .navbar-nav .nav-link.active::before {
+        width: 100%;
+        left: 0;
+    }
+    .navbar-light .navbar-nav .nav-link.nav-contact::before {
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+}
+
+.carousel-pos {
+    position: relative;
+}
+
+.carousel-pos h5 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    background: transparent;
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 14px;
+        font-weight: 500 !important;
+    }
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+    .car-sel h3 {
+        margin-top: 12px;
+        margin-left: 12px;
+        font-size: 18px;
+    }
+    .car-sel {
+        margin-top: 16%;
+        margin-right: 0px;
+        padding: 10px;
+    }
+    .car-sel p {
+        font-size: 16px;
+    }
+}
+
+.carousel-indicators {
+    align-items: flex-start;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 5px;
+    height: 20px;
+}
+
+.carousel-indicators .active {
+    height: 36px;
+}
+
+.par p {
+    color: #7697d4;
+    font-size: 14px;
+}
+
+.hero-header {
+    background: linear-gradient(rgba(18, 15, 45, .5), rgba(18, 15, 45, .5)), url(../imgnew/services/Switch-cables.jpg) top right;
+    background-size: cover;
+}
+
+.contact-us {
+    background: linear-gradient(rgba(18, 15, 45, .5), rgba(18, 15, 45, .5)), url(../imgnew/products/help-desk.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.home-sc {
+    height: 100vh;
+    background: linear-gradient(rgba(18, 15, 45, .5), rgba(18, 15, 45, .5)), url(../imgnew/products/business01.jpg) top right;
+    background-size: cover;
+}
+
+.student1 {
+    height: 100vh;
+    background: linear-gradient(rgba(18, 15, 45, .3), rgba(18, 15, 45, .3)), url(../imgnew/products/student3.jpeg);
+    background-size: cover;
+}
+
+.student2 {
+    height: 100vh;
+    background: linear-gradient(rgba(18, 15, 45, .3), rgba(18, 15, 45, .3)), url(../imgnew/services/student007.jpg);
+    background-size: cover;
+}
+
+.student3 {
+    height: 100vh;
+    background: linear-gradient(rgba(18, 15, 45, .3), rgba(18, 15, 45, .3)), url(../imgnew/services/student10.jpg);
+    background-size: cover;
+}
+
+.student4 {
+    height: 100vh;
+    background: linear-gradient(rgba(18, 15, 45, .3), rgba(18, 15, 45, .3)), url(../imgnew/services/student009.avif);
+    background-size: cover;
+}
+
+.mission-dep {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.mission-dep h4 {
+    font-size: 20px;
+    color: burlywood;
+}
+
+.mission-dep p {
+    font-size: 20px;
+    color: #DDDDDD;
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.service-par {
+    margin-bottom: 25px;
+}
+
+.service-par p {
+    margin: 20px auto;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /*font-family: 'Times New Roman', Times, serif;*/
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    /*font-family: serif;*/
+    /* font-family: Georgia, 'Times New Roman', Times, serif;*/
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+}
+
+.service-par h5 {
+    color: crimson;
+    padding: 12px;
+}
+
+.service-par h5::before,
+.service-par h5::after {
+    display: inline-block;
+    content: "";
+    border-top: .4rem solid crimson;
+    border-radius: 10px;
+    width: 2.5rem;
+    margin: 0 .6rem;
+    transform: translateY(-.3rem);
+}
+
+
+/*font-family: 'Oswald', sans-serif;*/
+
+.team-item {
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px 10px pink inset;
+    transition: transform 0.5s;
+}
+
+.service-item div {
+    z-index: 1;
+}
+
+.service-item div::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 2px 2px 0 0;
+    transition: .5s;
+    z-index: -1;
+}
+
+.service-item div:hover::after {
+    width: 100%;
+    background: var(--light);
+}
+
+.service-item * {
+    transition: .5s;
+}
+
+
+/* animated border*/
+
+.service-item {
+    --g: 10px;
+    /* the gap */
+    --b: 2px;
+    /* border thickness*/
+    --c: #d35474;
+    /* the color */
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg, var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg, var(--_c)) repeat-y;
+    background: var(--_g1) var(--_p, 25%) 0, var(--_g2) 0 var(--_p, 125%), var(--_g1) var(--_p, 125%) 100%, var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b), var(--b) 200%;
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: .3s;
+}
+
+.service-item:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+}
+
+
+/*.service-item:hover * {
+    color: var(--light) !important;
+}*/
+
+.bg-offer {
+    background: linear-gradient(rgba(231, 8, 19, 0.644), rgba(212, 20, 29, 0.8));
+    background-size: cover;
+}
+
+
+/*  SYSTEM ONE SERVICES */
+
+.testimonial-carousel .owl-dots {
+    height: 45px;
+    margin-top: 5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 5px;
+    height: 25px;
+    background: #DDDDDD;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    height: 45px;
+    background: var(--secondary);
+}
+
+.testimonial-carousel .owl-item .testimonial-text,
+.testimonial-carousel .owl-item .testimonial-text * {
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text {
+    background: transparent;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text * {
+    color: var(--secondary) !important;
+}
+
+
+/*  SYSTEM ONE SERVICES END */
+
+
+/*   footer  */
+
+.page-fooer {
+    color: #ff3333;
+    font-size: 14px;
+}
+
+
+/* close footer*/
+
+.access p {
+    font-family: 'DM Serif Display', serif;
+    color: #250c0c00;
+    font-size: 18px;
+}
+
+
+/*----feature library rador*****/
+
+.feature-bio {
+    cursor: pointer;
+}
+
+.feature-bio:hover {
+    box-shadow: 0px 0 20px rgba(27, 47, 69, 0.1);
+}
+
+.footer-feature {
+    background: #d35474;
+}
+
+
+/* Please ❤ this if you like it! */
+
+
+/* ========================================= * 
+		        BEST VIEWED FULLSCREEN
+   https://codepen.io/ig_design/full/NWxwBvw
+ * ========================================= */
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.full-height {
+    min-height: 100vh;
+}
+
+.over-hide {
+    overflow: hidden;
+}
+
+.padding-tb {
+    padding: 100px 0;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.checkbox:checked+label,
+.checkbox:not(:checked)+label {
+    position: relative;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    margin-right: 8px;
+    margin-left: 8px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #3f2fcf;
+    border-radius: 2px;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    background-image: url('../imgnew/products/MT143_3.jpg');
+    animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.checkbox.scnd+label {
+    background-image: url('../imgnew/products/shelf.jpg');
+}
+
+.checkbox.thrd+label {
+    background-image: url('../imgnew/products/gates\ _btn.png');
+}
+
+.checkbox.foth+label {
+    background-image: url('../imgnew/products/self_service_staiton-removebg-preview.png');
+}
+
+.checkbox:checked+label {
+    box-shadow: 0 8px 25px 0 rgba(16, 39, 112, .3);
+    transform: scale(1.3);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.slider-height-padding {
+    padding-top: 440px;
+}
+
+ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    z-index: 100;
+    padding: 25px;
+    margin: 0;
+    list-style: none;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../imgnew/products/tripod-haif.jpg');
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 2.7;
+    color: #343434;
+    writing-mode: vertical-rl;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+ul li:nth-child(2) {
+    background-image: url('../imgnew/products/shelf-remove.png');
+}
+
+ul li:nth-child(3) {
+    background-image: url('../imgnew/products/01.jpg');
+}
+
+ul li:nth-child(4) {
+    background-image: url('../imgnew/products/self_service_staiton.png');
+}
+
+.checkbox.frst:checked~ul li:nth-child(1) {
+    opacity: 1;
+    pointer-events: auto;
+    border-radius: 16px;
+}
+
+.checkbox.scnd:checked~ul li:nth-child(2) {
+    opacity: 1;
+    pointer-events: auto;
+    border-radius: 16px;
+}
+
+.checkbox.thrd:checked~ul li:nth-child(3) {
+    opacity: 1;
+    pointer-events: auto;
+    border-radius: 16px;
+}
+
+.checkbox.foth:checked~ul li:nth-child(4) {
+    opacity: 1;
+    pointer-events: auto;
+    border-radius: 16px;
+}
+
+@media (max-width: 767px) {
+    .slider-height-padding {
+        padding-top: 340px;
+    }
+    ul li {
+        height: 300px;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    .car-sel {
+        margin-top: 2%;
+        padding: 2 20px;
+    }
+    .car-sel p {
+        padding: 14px;
+        font-size: 16px;
+    }
+    .service-par {
+        margin-bottom: 2px;
+    }
+    .service-par p {
+        margin-top: 6px;
+        margin-bottom: 12px;
+        font-size: 17px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .service-par h5 {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .service-par h5::before,
+    .service-par h5::after {
+        display: inline-block;
+        content: "";
+        border-top: .3rem solid crimson;
+        border-radius: 10px;
+        width: 1.5rem;
+        margin: 0 .5rem;
+        transform: translateY(-.3rem);
+    }
+}
+
+@media (max-width: 575px) {
+    .slider-height-padding {
+        padding-top: 240px;
+    }
+    ul li {
+        height: 200px;
+    }
+}
+
+
+/**library security**/
+
+.lib-sec {
+    background: #f0f0f0;
+    border-radius: 5px;
+}
+
+
+/***anti-theft**/
+
+.anti-theft p {
+    font-size: 14px;
+}
+
+.lib-link h2 {
+    font-size: 15px;
+}
+
+
+/**Accordion**/
+
+.accordion-button {
+    padding: 8px;
+}
+
+.accordion-body {
+    padding: 7px;
+}
+
+.foote-bg {
+    background-color: #bb7979;
+}
+
+.campus-bg {
+    /* background-color: whitesmoke;
+    background-color: honeydew;*/
+    background-color: ghostwhite;
+}
+
+.prod-items {
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.9s;
+}
+
+.prod-items:hover {
+    /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;*/
+    /*box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;*/
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;*/
+    /*box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;*/
+    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;*/
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.prod-items span {
+    color: #d35474;
+    /*color: #bb7979;*/
+    font-size: 17px;
+    padding-bottom: 2px;
+    margin-bottom: 1px;
+    font-weight: 600;
+}
+
+.erp-par p {
+    font-size: 15px;
+    padding: 15px;
+    /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
+    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+}
+
+.erp-par h5 {
+    font-size: 16px;
+}
+
+.display-size {
+    font-size: 8px;
+}
+
+.liblink-hover {
+    background: #c7e2df;
+    color: #280880;
+}
+
+
+/**--------services-----------**/
